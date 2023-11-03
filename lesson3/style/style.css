@@ -1,0 +1,120 @@
+*{
+   margin: 0;
+   padding: 0; 
+   /* обнуление всех стилий в index 
+   которые были присвоинны по умолчанию 
+   (для чистоты кода и за размера экрана и браузера)*/
+
+}
+
+ol, ul{ /* указывать так как мы обнулили верху */
+    margin: 15px 0;  /* пробел */ 
+    /* без пробела можно использовать auto;*/
+    padding-left: 40px;
+    border: 1px solid black;
+ 
+ }
+
+ dl{
+    margin-left: 40px;
+}
+.text1{
+    margin: 20px 30px 40px 20px;
+ }
+
+.list1{
+    list-style: georgian inside none;
+
+    /*list-style-type: ;
+    list-style-position: 
+    (outside-> за границей/ inside -> на границе ;
+    list-style-image: url(`link`);*/
+ }
+
+
+.block1 {
+
+    width: 300px;
+    height: 200px;
+    border: 5px solid black;
+    background-color: antiquewhite;
+    
+    /* отступы 
+       внешнии */
+       margin: 50px 20px 30px 40px; /* присвоивание после обнуление*/
+       /* margin-top: 50px; -> верхний 
+       margin-bottom: 30px; -> нижнии  
+       margin-left: 60px; -> лево 
+       margin-right: 40px; -> право */
+
+    
+    /* отступы в блоке 
+       внунрии */
+       padding-top: 20px;
+       padding-bottom: 30px;
+       padding-left: 50px;
+       padding-right: 40px;
+
+
+}
+.block2 {
+    
+    width: 300px;
+    height: 200px;
+    border: 5px solid rebeccapurple;
+    background-color: cornflowerblue;
+    border-radius: 50px; 
+    /* скруглить блок  -> 50%(круг) 
+    border-radius: 20px 30px 40px 50px;
+    -> радиус для всех 4 углов 
+    (можно указать и два тогда будет по X идти)*/
+
+    
+    /* отступы на экране 
+       внешнии */
+       margin: 50px 20px 30px 40px;
+
+    /* отступы в блоке 
+       внунрии */
+       padding: 20px 30px 50px 40px;
+
+}
+.block3 {
+    
+    width: 300px;
+    height: 150px;
+    border: 5px solid rgb(136, 232, 195);
+    background-color: rgb(246, 168, 246);
+    border-radius: 50%; 
+    /*50%(круг)*/
+    text-align: center;
+
+    /* отступы на экране 
+       внешнии */
+       margin: 50px 20px 30px 40px;
+
+    /* отступы в блоке 
+       внунрии */
+       padding: 20px 30px 50px 40px;
+
+}
+
+.block4 {
+    
+    width: 300px;
+    height: 200px;
+    border: 5px solid rgb(174, 221, 100);
+    background-color: rgb(152, 192, 242);
+    border-radius: 20px 30px 40px 50px; 
+    /* -> радиус для всех 4 углов */
+
+    /* отступы на экране 
+       внешнии */
+       margin: 50px 20px 30px 40px;
+
+    /* отступы в блоке 
+       внунрии */
+       padding: 20px 30px 50px 40px;
+
+}
+

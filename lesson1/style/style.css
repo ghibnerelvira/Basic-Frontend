@@ -1,0 +1,40 @@
+h1{
+    /* цвет текста */
+    color: indianred;
+}
+p{
+    color: dimgray;
+    /* paзмер шрифта */
+    font-size: 20px;
+}
+.p1{
+    color: brown;
+}
+.changestyle{
+    color: blue;
+}
+.changesize{
+    font-size: 50px;
+}
+.changecolor{
+    color: rgb(119, 180, 133);
+}
+#redcolor{
+    color: red;
+}
+.link1{
+    color: rgb(105, 202, 217);
+    font-size: 20px;
+    text-decoration: none;
+}
+.Hobby {
+    color:coral;
+    background-color: antiquewhite;
+    /* ширина */
+    width: 300px;
+    /* высота */
+    height: 200px;
+}
+.img1 {
+    width: 200px;
+}

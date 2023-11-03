@@ -1,0 +1,69 @@
+/* Задание 1*/
+.text1 {
+    color: blue;
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: center;
+    /* форматирование текста -> start(left), center, end(right), justify(красиво на всю площядь) */
+    line-height: 50px;
+    /* растояние между строк */
+    font-weight: bold;
+    /* bolder, bold жирный, normal, lighter -> можно начинать со 100 */
+    font-style: italic;
+    /* oblique, italic, normal наклоненый шрифт */
+    text-indent: 30px;
+    /* отступ в первой строки */
+}
+
+
+/* Задание 2*/
+.blue {
+    color: blue;
+    font-style: italic; /* наклоненый шрифт */
+}
+
+.red {
+    color: red;
+    font-weight: bold; /* жирный шрифт */
+}
+
+div {
+    width: 400px; /* форматирование текста на размер */
+}
+
+main>p { /* main> при своино имино p c класса main */
+    line-height: 30px; /* ростояние между строк */
+    text-indent: 30px; /* отступ строки */
+    text-align: justify; /* форматирование текста красиво на всю площядь */
+}
+
+h1, h2 {
+    color: blue;
+    text-align: center; /* форматирование текста по центру */
+}
+h1{
+    font-size: 20px; /* размер */
+}
+
+h2{
+    font-size: 15px; /* размер */
+}
+
+/* Задание 3 -> рамки */
+.block1 {
+    width: 400px; /* ширина */
+    height: 300px; /* высота */
+    /* целая рамка
+    border: 5px solid blue;
+
+     border-style: solid; -> вид
+     border-width: 5px; -> толшина
+     border-color: blue; ->  цвет */
+    
+    /* рамка по отдельности */
+    border-top: 3px dotted  red;
+    border-bottom: 3px  dashed orange;
+    border-left: 3px double salmon;
+    border-right: 3px groove yellow;
+
+}
