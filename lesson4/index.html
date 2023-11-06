@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!-- Задание 1 Table -->
+    <table>
+        <caption>Задание 1 (Titel)</caption>
+        <tr>
+            <th>1.</th> <!-- th -> делает жирным (заголовок)-->
+            <th>2.</th>
+            <th>3.</th>
+            <th>4.</th>
+        </tr>
+        <tr>
+            <td>text1</td> <!-- td -> не жирный текст -->
+            <td>text2</td>
+            <td>text3</td>
+            <td>text4</td>
+        </tr>
+    </table>
+    
+    <!-- Задание 2 Table (для большой info) benutzerfreundlich -->
+    <table>
+        <caption> Задание 2</caption>
+        <thead>
+            <tr>
+                <th>1.</th>
+                <th>2.</th>
+                <th>3.</th>
+             </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Anna</td>
+                <td>Smith</td>
+                <td>29J</td>
+            </tr>
+            <tr>
+                <td>Viktor</td>
+                <td>Smith</td>
+                <td>30J</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>text1.1</td>
+                <td>text2.1</td>
+                <td>text3.1</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Задание 3 Table обединение -->
+    <table>
+        <caption>Задание 3</caption>
+        <tr>
+            <td rowspan="2">Browser</td> 
+            <!-- rowspan ="количество ичеек которые надо обеденить" с сверху  в вниз -->
+            <th colspan="2">Inzternet explorer</th>
+            <!-- colspan="количество ичеек которые надо обеденить" с лево на право --> 
+            <th colspan="3">Opera</th>
+            <th colspan="2">Firefox</th>
+        </tr>
+        <tr>
+            <th>6.0</th>
+            <th>7.0</th>
+            <th>7.0</th>
+            <th>8.0</th>
+            <th>9.0</th>
+            <th>1.0</th>
+            <th>2.0</th>
+        </tr>
+        <tr>
+            <td>Подерживается</td>
+            <td>Да</td>
+            <td>Нет</td>
+            <td>Да</td>
+            <td colspan="4">Нет</td>
+        </tr>
+    </table>
+
+    <!-- Задание 4 Table Practice  -->
+    <table class="tablepractice">
+        <caption>Задание 4 -> Practice</caption>
+        <tr>
+            <th rowspan="2">Heading</th>
+            <th>Students</th>
+            <th colspan="3">Details</th>
+        </tr>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Roll Number</th>
+        </tr>
+        <tr>
+            <td rowspan="4">Student List</td>
+            <td>1</td>
+            <td>Victor</th>
+            <td>Computer Science</td>
+            <td>12345</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Williams</th>
+            <td>Electronics</td>
+            <td>23456</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Harry</th>
+            <td>Electrical</td>
+            <td>34567</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Rick</th>
+            <td>Civil</td>
+            <td>45678</td>
+        </tr>
+    </table>
+    
+    <!-- Задание 5 Table Practice  -->
+    <table class="table5">
+        <tr>
+            <td>
+                <img src="https://bit.ly/3skB65m" alt="">
+                <img src="https://bit.ly/3skB65m" alt="">
+            </td>
+            <td>
+                text text text
+            </td>
+            <td>100</td>
+        </tr>
+    </table>
+    <div class="block1">
+        <!-- потомки block1 - text1, text2, text3 -->
+        <!-- непоср. вложение block1 - text 1 -->
+        <p>text1</p>
+        <div class="block2">
+            <!-- потомки block2 - text2, text3 -->
+            <!-- непоср. вложение block2 - text 2, text 3 -->
+            <p>text2</p>
+            <p>text3</p>
+        </div>
+    </div>
+    <!-- Задание 6 Table Задний фон -->
+    <div class="shadowblock">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis ratione voluptatibus ullam, obcaecati architecto praesentium, nulla fugiat similique dolorem totam distinctio, illo ex expedita amet mollitia eligendi hic facere ipsam?</p>
+    </div>
+    <!-- Задание 7 -->
+    <div class="box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ducimus laborum, quisquam tempora commodi maxime repellendus unde nobis minus, rem a esse at velit ratione. Error pariatur saepe corporis quasi.</div>
+    
+    <div class="box2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora dignissimos suscipit qui eveniet amet perferendis temporibus natus ducimus numquam ut eligendi, repudiandae quas odit molestiae iste, repellendus est, distinctio possimus!</div>
+</body>
+</html>
