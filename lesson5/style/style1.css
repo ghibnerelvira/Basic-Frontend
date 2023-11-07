@@ -1,0 +1,51 @@
+*{
+    margin: 0; /* растояние снаружи */
+    padding: 0; /* растояние внутри */
+    box-sizing: border-box;  /* размер бокса */
+    text-decoration: none; /* подчеркивание */
+    color: black;
+    font-size: 16px; /* размер */
+}
+
+/* Задание 1 */
+
+.container>div{
+    width: 200px;
+    height: 200px;
+    border: 5px solid green;
+    margin: 10px 5px; 
+}
+.container{
+    display: flex; 
+    flex-direction: row;
+    border: 2px solid red;
+    flex-wrap: wrap;
+    /* wrap -> перенос строк (если это нужно)
+    no-wrap нету переноса */
+}
+
+/* Задание 2 */
+
+.box1{
+    /* cm, mm, pt, pc -> не используются */
+    /* px, %, em -> используются */
+
+    margin-top: 30px;
+    border: 5px solid blueviolet;
+
+    /* виды измерения единиц */
+    /* фикстрованная единица px 
+    width: 500px;
+    height: 400px; */
+
+    /* относительная единица % */
+    width: 50%;
+    height: 400px;
+
+}
+
+.box1>p{
+    height: 40%;
+    /* height 400px/2 = .. */
+    font-size: 1em;/* = 16px */
+} 

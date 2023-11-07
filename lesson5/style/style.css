@@ -1,0 +1,99 @@
+*{
+    margin: 0; /* растояние снаружи */
+    padding: 0; /* растояние внутри */
+    box-sizing: border-box;  /* размер бокса */
+    text-decoration: none; /* подчеркивание */
+    color: black;
+    font-size: 16px; /* размер */
+}
+
+/* Задание 1 */
+
+p, span{
+    border: 5px solid black;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+span{
+    /* болочный */
+    display: block; 
+}
+
+p{
+    /* строчный */
+    display: inline; 
+}
+
+
+/* Задание 2 */
+.block11{
+    width: 200px;
+    height: 200px;
+    border: 5px solid orange; 
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.block22{
+    width: 200px;
+    height: 200px;
+    border: 5px solid red; 
+    margin-right: 10px;
+    margin-bottom: 10px; 
+    display: inline-block;
+}
+.block33{
+    width: 200px;
+    height: 200px;
+    border: 5px solid blue; 
+    margin-right: 10px; 
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+
+/* Задание 3 */
+.container>div{
+    width: 200px;
+   /* height: 200px;*/ /* указывает на все элименты */
+    border: 5px solid green;
+    margin: 10px 5px; 
+}
+
+.container{
+    /* блоки подстраиваются под экран и не перескакивают */ 
+    display: flex; 
+    /*  row, column (в ряд, в колонку) */ 
+    flex-direction: row;
+    height: 700px;
+    border: 7px solid red;
+    justify-content: flex-start; /* -> лево право <- 
+    fex-end, flex- start, flex-center 
+    (выравнивание к концу, начало и центра строки)
+    space-between(отступы одинаковые 
+    -> нет отступа у первого и последниго элемента в конце diplay),
+    space-around(00/2 отступы в нвчале и в конце экрана 
+    -> /2 а остальное растояние одинаковое), 
+    space-evenly(ростаяние везде равное) */
+    align-items: flex-start; /* вверх вниз */
+}
+
+/* каждому по отдельности присвоить */
+.block1{
+    height: 200px;
+}
+
+.block2{
+    height: 300px;
+}
+
+.block3{
+    height: 100px;
+}
+
+.block4{
+    height: 200px;
+}
+
