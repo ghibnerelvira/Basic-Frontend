@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    display: flex;
+    border: 5px solid red;
+    margin: 20px;
+    height: 1000px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* работает если есть flex-wrap: wrap; height.. px;
+    ростояние между строк(блоков) */
+    align-content: space-around;
+    /* flex-start, flex-end, center, 
+    space-between, space-around */
+}
+.container>div{
+    border: 5px solid blue;
+    width: 200px;
+    height: 200px;
+    font-size: 30px;
+}
+/* меняет порядок от 1,2,3.. на 3,5,2,1,4*/
+.block1{
+    order: 4;
+}
+.block2{
+    order: 3;
+}
+.block3{
+    order: 1;
+}
+.block4{
+    order: 5;
+}
+.block5{
+    order: 2;
+}
+.block6{
+    order: -1;
+}

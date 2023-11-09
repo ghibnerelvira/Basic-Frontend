@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+    <link rel="stylesheet" href="style/styleforms.html">
+</head>
+<body>
+    <!-- HTML FORMS-->
+    <!-- 
+    get не секретная иформация
+    post секретная информация (конфедитиональная)-->
+    <form action="#" method="get">
+        <input type="text">
+        <input type="email">
+        <input type="password">
+        <input type="date">
+        <input type="file">
+        <input type="submit">
+    </form>
+    
+    <p>Gender</p>
+    <input type="radio" name="gender"><span>Female</span>
+    <input type="radio" name="gender"><span>Male</span>
+    <input type="radio" name="gender"><span>Other</span>
+
+    <p>Hobby</p>
+    <input type="checkbox"><span>Football</span>
+    <input type="checkbox"><span>Tennis</span>
+    <input type="checkbox"><span>Singing</span>
+    <input type="checkbox"><span>Programming</span>
+
+    
+    <input type="submit">
+    <input type="reset">
+    <input type="button">
+    
+    <button type="button">send</button>
+    <!-- Текст без функциональности 
+    -> <button>send</button> если без type -->
+
+    <select name="" id="">
+        <option value="java">Java</option>
+        <option value="cplus">C++</option>
+        <option value="python">Python</option>
+        <option value="csharp">C#</option>
+        <option value="ruby">Ruby</option>
+        <option value="none" selected >Sprache wählen</option>
+    <!-- value="ruby" отпровляет информации на сервер-->
+    </select>
+
+
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 1. */
+.box{
+    width: 100px;
+    height: 100px;
+    /* bgc:red */
+    background-color: red;
+}
+.child{
+    width: 50px;
+    height: 50px;
+    /* bgc:red */
+    background-color: blue;
+}
+
+
+/* 2. */
+.position{
+    /* w10+h100; */
+    width: 100px;
+    height: 100px;
+}
+.position-1{
+    background-color: orange;
+}
+.position-2{
+    background-color: red;
+    position: relative; /* для того чтобы мы могли управлять в лево в право итд.*/
+    left: 40px;
+    top: 40px; /* вниз так как отступ с верху*/
+    z-index: 1; /* обект стоет поверх другово */
+}
+.position-3{
+    background-color: blueviolet;
+    position: absolute;
+    /* центрирование элемента по -y и -x */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.position-4{
+    background-color: rgb(255, 0, 251);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* 3. */
+.parent{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    position: relative;
+}
+.parent .child{
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* 5. */
+.element-1{
+    position: fixed; /* фиксируется на одном месте */
+    background-color: rgb(0, 255, 34);
+    width: 100%;
+    top: 0; /* сверху снизу-> botton*/
+}
+
+.element-2{
+    position: sticky; /* когда доходим до элемента он фиксируется и скролится вместе */
+    background-color: rgb(212, 0, 255);
+    width: 100%;
+    top: 0; /* сверху снизу-> botton*/
+}
+p{
+   margin-top: 20px;
+   font-size: 50px;
+}
+
+/* 6. */
+.gallery{
+    max-width: 300px; /* для правельного уменьшение страницы */
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin: 0 auto; */
+
+    position: relative; /* для .gallery__overlay */
+}
+.gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* чтобы качество неменялось */
+    display: block; /* важно задовать чтобы небыло проблем 
+    с мини пиксилями которые добовляются по дефалту */
+}
+.gallery__overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15); /*  или opacity: 0.5% прозрачность 50%*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+.gallery__overlay button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 12px 16px;
+    border: none;
+    background-color: wheat;
+}
+
+.gallery:hover .gallery__overlay{
+    opacity: 1;
+}
