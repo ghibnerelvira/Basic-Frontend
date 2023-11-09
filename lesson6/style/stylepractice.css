@@ -17,6 +17,7 @@ body{
     padding: 30px;
     max-width: 581px;
     height: 1156px;
+    margin: 0 auto;
 }
 
 .header{
@@ -25,7 +26,7 @@ body{
     display: inline-flex;
     padding: 69px 0px 55px 0px;
     justify-content: center;
-    align-items: center;    
+    align-items: center;   
 }
 
 h1{
@@ -36,6 +37,7 @@ h1{
     font-style: normal;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
 }
 
 input, select, textarea{
@@ -57,7 +59,7 @@ p{
     margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
-    font-style: normal;  
+    font-style: normal; 
 }
 label{
     color: #000000;
@@ -78,11 +80,12 @@ input:focus{
 }
 
 textarea{
-    width: 512.13px;
+    max-width: 512.13px;
     height: 56px; 
     border-radius: 5px;
     border: 1px solid #CCC;
     background: #FFF;
+    margin: 0 auto;
 }
 
 
@@ -111,5 +114,6 @@ textarea{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
