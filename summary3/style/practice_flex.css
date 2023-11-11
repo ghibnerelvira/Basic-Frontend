@@ -1,0 +1,70 @@
+/*
+  1 - px
+  2 - %
+  3 - em
+  4 - rem (root em) (Относительно размера шрифта у тега html)
+  5 - vw (viewpoint width)
+  6 - vh (viewpoint height)
+  1vh = 1% высоты видимой области
+  1vw = 1% ширины видимой области
+  vw И vh в себе содерживают размеры скролл бара
+  7 - vmin
+  vw < vh | vmin = vw
+  vw > vh | vmin = vh
+  8 - vmax
+  vw < vh | vmax = vh
+  vw > vh | vmax = vw
+*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 30px;
+}
+
+.box {
+    width: 95vw;
+    height: 92vh;
+    background-color: #364B7E;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .box>.top {
+    background-color: #FF87C0;
+    height: 30%;
+  }
+  
+  .box>.bottom {
+    display: flex;
+    gap: 20px;
+    height: 70%;
+  }
+  
+  .box>.bottom>.right_bottom {
+    background-color: #FF87C0;
+    width: 50%;
+  }
+  
+  .box>.bottom>.left_bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+  }
+  
+  .box>.bottom>.left_bottom>.top {
+    height: 70%;
+    background-color: #FF87C0;
+  }
+  
+  .box>.bottom>.left_bottom>.bottom {
+    height: 30%;
+    background-color: #FF87C0;
+  }
+

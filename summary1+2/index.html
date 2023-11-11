@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary 2</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!-- 
+    семантические теги
+    они влияют на CEO и нужны приложениям для людей ограниченными возможностями
+    -->
+  <!-- 
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <section>
+            <article>
+            </article>
+        </section>
+    </main>
+    <footer>
+    </footer>
+     -->
+
+  
+
+  <br>
+
+
+  <!-- 
+    tr = table row
+    td = table data
+    th = table header
+
+    thead = table head
+    tbody = table body
+    tfoot = table footer
+
+    cellspacing расстояние между границами ячейки и таблицы
+    cellpadding внутренные отступы к ячейкам
+   -->
+   <!-- <table border="1" cellspacing="0" cellpadding="10"></table> -->
+  <table>
+    <tr>
+      <th>1</th>
+      <td rowspan="2">2</td>
+      <td colspan="2">3</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>7</td>
+      <td>8</td>
+    </tr>
+  </table>
+
+  <br>
+
+  <!-- 
+    ol = ordered list
+    ul = unordered list
+    li = list item
+   -->
+  <ol>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+    <li>List item 4</li>
+  </ol>
+  
+  <br>
+<!-- 1.--> 
+  <ul>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+    <li>List item 4</li>
+  </ul>
+
+  <br>
+<!-- 1.-->
+  <table>
+    <caption>Сравнение моделей</caption>
+    <thead>
+      <tr>
+        <th>Модель</th>
+        <th>ОС</th>
+        <th>Дисплей</th>
+        <th>ОЗУ</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Samsung Galaxy s7</th>
+        <td rowspan="2">Android</td>
+        <td>5.1''</td>
+        <td>4 ГБ</td>
+      </tr>
+      <tr>
+        <th>Sony Xpera z5</th>
+        <td>4.6''</td>
+        <td rowspan="2">2 ГБ</td>
+      </tr>
+      <tr>
+        <th>Apple Iphone 6s</th>
+        <td>iOS</td>
+        <td>4.7''</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="4">
+          Таблица сравнения моделей
+        </th>
+      </tr>
+    </tfoot>
+  </table>
+
+  <br>
+  <!-- 2.-->
+  <!-- em rem  -->
+  <ul class="list"> <!-- fz = 20px -->
+    <li> <!-- 0.5em = 0.5 * 20 = 10 | em = 10 -->
+      1 level
+      <ul>
+        <li> <!-- 0.5em = 0.5 * 10 = 5 | em = 5 -->
+          2 level
+          <ul>
+            <li> <!-- 0.5em = 0.5 * 5 = 2.5 | em = 2.5 -->
+              3 level
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <br>
+
+  <!-- 3. -->
+
+  <p class="first_p">
+    Lorem ipsum dolor sit, amet consectetur 
+    adipisicing elit. Ea ex unde nesciunt officiis, 
+    fugiat culpa molestiae eius omnis similique. 
+    Iste eaque repudiandae nisi sapiente quidem 
+    architecto recusandae dolorum eum explicabo?
+  </p>
+
+  <p class="second_p">
+    Lorem ipsum dolor sit, amet consectetur 
+    adipisicing elit. Ea ex unde nesciunt officiis, 
+    fugiat culpa molestiae eius omnis similique. 
+    Iste eaque repudiandae nisi sapiente quidem 
+    architecto recusandae dolorum eum explicabo?
+  </p>
+
+  <p class="third_p">
+    Lorem ipsum dolor sit, amet consectetur 
+    adipisicing elit. Ea ex unde nesciunt officiis, 
+    fugiat culpa molestiae eius omnis similique. 
+    Iste eaque repudiandae nisi sapiente quidem 
+    architecto recusandae dolorum eum explicabo?
+  </p>
+</body>
+</html>

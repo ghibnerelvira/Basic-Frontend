@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  h1 {
+    /* (top rigth bottom left) */
+    padding: 5px;
+    /* (top bottom) (rigth left) */
+    padding: 5px 10px;
+    /* top (rigth left) bottom */
+    padding: 5px 10px 4px;
+    /* top rigth bottom left */
+    padding: 5px 10px 4px 3px;
+  }
+  
+  /*
+    h1
+    .title = class
+    #title = id
+  */
+  
+  
+  /* 1. ================= */
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  table, tr, td, th {
+    border: 1px solid black;
+  }
+  
+  /* ul {
+    list-style: decimal;
+  } */
+  
+  td, th {
+    padding: 10px;
+  }
+  
+  /*
+    1 - px
+    2 - %
+    3 - em
+    4 - rem (root em) (Относительно размера шрифта у тега html)
+    5 - vw (viewpoint width)
+    6 - vh (viewpoint height)
+    1vh = 1% высоты видимой области
+    1vw = 1% ширины видимой области
+    vw И vh в себе содерживают размеры скролл бара
+    7 - vmin
+    vw < vh | vmin = vw
+    vw > vh | vmin = vh
+    8 - vmax
+    vw < vh | vmax = vh
+    vw > vh | vmax = vw
+  */
+  
+  /* 2. ================= */
+  ul {
+    padding-left: 40px;
+  }
+  
+  .list {
+    font-size: 20px;
+  }
+  
+  html {
+    font-size: 26px;
+  }
+  
+  li {
+    /* font-size: 0.5em; */
+    /* font-size: 0.5rem; */
+  }
+  
+  
+  /* 3. ================= */
+  p {
+    border: 1px solid red;
+  }
+  
+  .first_p {
+    width: 50%;
+  }
+  
+  .second_p {
+    width: 50vw;
+    height: 50vh;
+  }
+  
+  .third_p {
+    width: 50vmax;
+    height: 50vmin;
+  }
