@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+
+nav{
+    position:fixed;
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    z-index: 2;
+}
+a {
+    color: white;
+    font-size: 18px;
+}
+nav div{
+    padding: 0 10px;
+    border-right: 2px solid white;
+    display: flex;
+    align-items: center;
+}
+
+h1, h2, h3, p{
+    margin: 10px 0;  
+}
+
+main{
+   position: relative;
+   top: 50px;
+   left: 30px; 
+   z-index: 1;
+   /* или -> margin: 50px 0 0 30px; */
+}
+
+nav div:hover{ 
+/* принаведение меняется задний фон */
+   background-color: rgb(255, 255, 255);
+   transition: 0.30s;
+}
+nav div:hover a{ 
+/* принаведение меняется цвет тега a (текста) */
+    color: black;
+}
+
+h1:hover{ 
+/* принаведение меняется цвет тега h1 (текста) */
+    font-size: 40px;
+    color: red;
+}
+
+
+

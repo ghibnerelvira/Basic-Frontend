@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+h1{
+    padding: 10px;
+}
+
+.element-A, 
+.element-B,
+.element-C,
+.element-D, 
+.element-E,
+.element-F,
+.element-G, 
+.element-H,
+.element-I,
+.element-K
+{
+    position: sticky;
+    background-color: black;
+    top: 0px;
+    height: 40px;
+    color: white;
+    padding: 10px;
+}
+
+main{
+    padding: 10px;
+}
+
+p{
+    margin: 10px 0 10px 40px;
+}

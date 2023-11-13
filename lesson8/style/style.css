@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .main{
+    display:flex;
+    flex-direction: row/column;
+    justify-content: flex-start/flex-end/center/space-around/space-between/space-evenly;
+    align-items: flex-start/flex-end/center;
+    flex-wrap: wrap/nowrap;
+
+} */
+
+/* .main{
+    position: static/relative/absolute/fixed/sticky;
+    left: ;
+    top: ;
+    right: ;
+    bottom: ; 
+
+} */
