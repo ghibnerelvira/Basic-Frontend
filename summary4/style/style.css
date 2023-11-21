@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 15px;
+  }
+  
+  .block {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn_1 {
+    padding: 10px 15px;
+    background-color: coral;
+    color: silver;
+    border: none;
+    border: 1px solid rgb(255, 88, 27);
+    cursor: pointer;
+    /*
+    all все стили анимировать 
+    2s длительность
+    0s задержка анимации
+     */
+    transition: all 2s 0s cubic-bezier(.1, -1.21, .83, 1.92);
+  }
+  
+  .btn_1:hover {
+    color: coral;
+    background-color: silver;
+    box-shadow: 2px 2px 9px 3px black;
+    /*
+    rotate поворот элеменат, значение указываем в градусах
+    scale масштабирует элемент
+    */
+    transform: rotate(360deg) scale(2) translate(10px, -20px);
+  }
+  
+  /* ============== after, before, pseudoelements [::] */
+  /*
+  after, before = inline elements 
+   */
+  ul {
+    list-style: none;
+  }
+  
+  li::after {
+    /* content: '⬅'; */
+    content: attr(data-status);
+    margin-left: 5px;
+  }
+  
+  li::before {
+    /* content: '➡'; */
+    content: '';
+    margin-right: 5px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: blue;
+  }
