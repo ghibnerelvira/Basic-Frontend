@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary 5</title>
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- 
+    defer говорит браузеру, подгружай javascript файлы параллельно но запускай его после того как построишь полностью DOM
+    соблюдает порядок сверху вниз по очерёдности
+    
+    <script async src="./scripts/script.js"></script> Не соблюдает порядок например: в рекламных интеграции (неважно когда появится какая реклама)
+    async работает почти так же как defer но не соблюдает порядок запуска скриптов, запускается тот который быстро подгрузился
+    оба аттрибута не будут работать без src
+   -->
+   <script defer src="./scripts/script.js"></script> <!-- можно указывать сверху но обезательно должен быть defer -->
+</head>
+<body>
+    <h2>Task 1</h2>
+    <p class="prgph">Paragraph - 1</p>
+    <p class="prgph">Paragraph - 2</p>
+    <p>Paragraph - 3</p>
+  
+    <ul class="list">
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+    </ul>
+
+   <!-- <script src="script/script.js"></script> -->
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+

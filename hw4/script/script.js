@@ -106,12 +106,18 @@ findMinNumber(number1, number2);
 // ==== 5. =====
 // Написать  функцию, которая в качестве аргументов получает два числа 
 // -> и возвращает массив чисел со значениями от меньшего числа к большему. <
+// Пример: getSortedArray(5, 2) => [2, 3, 4, 5]
 function getSortedArray(num1, num2) {
-    let numbers1 = [num1, num2];
+    let start = Math.min(num1, num2);
+    let end = Math.max(num1, num2);
+    let resultArray = [];
 
-    // Сортировка массива по возрастанию
-    numbers1.sort((a, b) => a - b);
-    return numbers1;
+    for (let i = start; i <= end; i++) {
+        resultArray.push(i);
+    }
+
+    return resultArray;
 }
-let resultArray = getSortedArray(5, 2);
-console.log(resultArray);  // Consol: [2, 5]
+let sortedArray = getSortedArray(5, 2); // от 2 до 5
+console.log(sortedArray);  // Consol: [2, 3, 4, 5]
+
