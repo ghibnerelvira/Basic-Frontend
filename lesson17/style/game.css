@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+body{
+    background: rgb(65, 65, 65);
+    display: flex;
+    justify-content: center;
+}
+#area{
+    background: whitesmoke;
+    width: 400px;
+    aspect-ratio: 1;
+    /*Aspect ratio в JavaScript - это соотношение ширины 
+    к высоте элемента, такого как изображение или видео, 
+    часто используемое для поддержания пропорций 
+    при разработке веб-интерфейсов.*/
+    margin-top: 80px;
+    /* в квадрате перемешение -> если обект выходит из его радительского элемента его скрывать*/
+    overflow: hidden;
+    /* overflow определяет, как браузер должен обрабатывать содержимое элемента, 
+    которое выходит за его указанные размеры. 
+    -> visible: Содержимое будет видимо за пределами границ элемента, 
+    даже если оно выходит за эти границы.
+    -> hidden: Любое содержимое, выходящее за границы элемента, 
+    будет скрыто.
+    -> scroll: Если содержимое выходит за границы элемента, появятся 
+    полосы прокрутки, позволяя прокручивать его.
+    -> auto: Браузер автоматически решает, следует ли добавлять полосы 
+    прокрутки в зависимости от содержимого элемента.*/
+}
+#object{
+    background: rgb(155, 160, 249);
+    width: 60px;
+    aspect-ratio: 1;
+    /* в квадрате перемешение*/
+    transform: translateY(-100%); 
+    position: relative;
+}
+
+#object.is-moving{
+    animation-name: movement;
+    animation-duration: 2.0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+/* анимация движения обекта (определение) */
+@keyframes movement{
+    to {
+        transform: translateY(400px); /* смешение по оси y */
+    }
+}
+
+
+/* transform: translateY() используется для перемещения элемента по вертикали 
+относительно его текущего положения.  -> translateX() по гарезантали
+1.вниз
+.box {
+  transform: translateY(50px); ->  Смещение вниз на 50 пикселей 
+}
+2.вверх
+.box {
+  transform: translateY(-20%); Смещение вверх на 20% от высоты элемента */

@@ -1,0 +1,33 @@
+/* []
+ {} */
+
+.change_color{
+    background: blue;
+}
+
+.change_size{
+    width: 2000px;
+    height: 400px;
+}
+
+div{
+    color: blueviolet;
+    background-color: white;
+}
+
+/* Practice 1 */
+.card {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+  
+.active {
+    color: white;
+    background-color: #007bff;
+}

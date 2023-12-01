@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Clicker</title>
+    <link rel="stylesheet" href="style/game.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <button onmousedown="start_game()">Start</button>
+    </header>
+
+    <div id="area" onmousedown="miss(event)"> <!-- event чтобы кликалось только на обект внутри радительского 
+                                            элеиента а не на радительское и сам обек внутри -->
+        <div id="object" onmousedown="hit()"></div>
+    </div>
+</div>
+
+
+
+<script src="script/game.js"></script>
+    
+</body>
+</html>

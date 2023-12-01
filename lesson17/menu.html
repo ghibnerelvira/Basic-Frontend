@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About company</title>
+
+    <style>
+        aside{
+            background: lightblue;
+            width: 250px;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            /* display: none;  скрыть */
+            transform: translateX(-250px); /* cпрятать width: 250px; и изаетого -250px */
+            transition: 1s;
+        } 
+        div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        } 
+        aside.is-open{
+            /* display: block; */
+            transform: translateX(0); /* выдвигается -> */
+        } 
+    </style>
+    
+</head>
+<body>
+    <script>
+        function toggle_menu() {
+            const menu = document.querySelector('aside');
+            menu.classList.toggle('is-open');
+        }
+    </script>
+
+    <aside class=""></aside>
+
+<div>
+    <h1>About company - menu</h1>
+
+    <button onclick="toggle_menu()">Menu</button>
+</div>
+    
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit libero nisi explicabo porro sapiente qui eos quia repellendus, voluptatem id minima eius inventore officia soluta illum dolore dolores nihil. Voluptates.
+    Voluptatem earum vitae neque sapiente delectus, pariatur beatae nulla voluptate, fugit aliquid asperiores modi officia consectetur provident totam porro eaque eius! Beatae, dolorum. Impedit hic commodi sit accusamus veniam quod?
+    Quis dicta, optio deserunt reprehenderit officia ratione aliquid, ut eligendi maiores aut libero eos, eum laboriosam dolorum fugit possimus quibusdam incidunt harum quas! Optio velit illum delectus quasi beatae exercitationem.
+    Autem ullam hic a. Cum sit accusamus provident ipsa necessitatibus facilis, officia itaque voluptates, eveniet placeat repudiandae dolores? Adipisci mollitia, qui ipsa voluptatem inventore eaque autem voluptas dolorum natus repellendus.
+    Nesciunt, rem debitis! Quidem exercitationem consequuntur ratione reprehenderit debitis esse et! Quis quas error dicta reprehenderit vero ad eligendi distinctio temporibus rerum fuga illo, dolore autem! Saepe fugiat illum veritatis.
+    Repellendus officia adipisci consequatur aliquam quidem repudiandae odit, ea atque molestiae aliquid rem vero facere veniam cum inventore nam excepturi praesentium magnam deserunt assumenda voluptates? Optio est voluptates modi numquam.
+    Eius, itaque officiis tempore nam ut qui. Neque architecto tenetur aliquid quisquam iste dolorem assumenda nostrum? Quos alias laborum quasi incidunt numquam repellendus accusantium asperiores ut! Adipisci aspernatur voluptatibus possimus?
+    Exercitationem saepe itaque aut voluptatum aliquam nisi, consequuntur sunt ab a quisquam ipsum ut necessitatibus natus totam cum reprehenderit, deserunt ad! Voluptates ea veritatis nobis necessitatibus illo quos in assumenda.
+    Cumque, culpa nostrum pariatur doloribus qui id illo minima minus iure praesentium perferendis est sint repellendus voluptatem? Illo deleniti accusantium veniam libero, aperiam sapiente repellat molestias quasi, adipisci aliquid dicta!
+    Reprehenderit praesentium, soluta, impedit odit possimus quam adipisci voluptatum hic, obcaecati et vitae suscipit. Iure ducimus ratione deleniti obcaecati reprehenderit saepe odio iusto consectetur omnis? Quas dolore voluptatibus quaerat animi.
+    Repellendus pariatur error, officia beatae quae commodi sequi dignissimos necessitatibus placeat amet ipsa molestias laudantium. Obcaecati eaque, suscipit eligendi praesentium nulla reiciendis quisquam quibusdam illo magni excepturi, in aut temporibus?
+    Ducimus, debitis necessitatibus. Sed esse nesciunt temporibus deleniti ipsam impedit unde nostrum in id nulla neque facere ut enim dolor natus incidunt dolorum autem explicabo molestias dicta, corporis architecto. Magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo tempore atque quo dolor, suscipit quam quidem debitis quae expedita commodi error eius ducimus sint autem quia consequatur provident at maxime.
+    Itaque omnis expedita libero ad sequi aspernatur exercitationem voluptate maxime, hic nemo! Dolores neque suscipit iste, enim, exercitationem quibusdam laborum ad libero deleniti reiciendis placeat dolore voluptate, eius eaque dolorem?
+    Alias consequatur assumenda neque cum ipsa, omnis, veritatis tempora nostrum iure itaque quaerat necessitatibus quas ipsam nobis unde labore tempore ea error optio ratione enim in voluptatibus quisquam temporibus? Quas.
+    Necessitatibus fugiat voluptates, beatae inventore sapiente iure sunt veniam quasi? Quaerat fugit tempore at a dolor sed recusandae labore quidem velit, iure laudantium repellendus suscipit. Temporibus, voluptatum! Assumenda, facilis possimus?
+    Reiciendis suscipit illum atque aliquam deserunt saepe exercitationem? Ipsum nemo repudiandae deserunt laudantium quia ab quae maiores pariatur aliquam doloremque qui cumque magnam beatae impedit corporis, iure, accusantium ipsam sequi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro molestias adipisci iusto enim ipsum reprehenderit nostrum neque ad, pariatur quaerat ea, aliquam consectetur distinctio illo quo laborum quod minus optio.
+    Consectetur sed voluptate eligendi architecto voluptatum odit eaque nulla? Impedit quibusdam, ratione repellat at repellendus, molestiae alias consectetur minus officiis consequatur facere! Aperiam doloribus nulla veritatis, similique rerum numquam natus.
+    Exercitationem culpa dicta aperiam voluptate corrupti accusantium nemo maxime, amet possimus debitis cupiditate eveniet qui, accusamus ea quod hic. Blanditiis, nulla consequuntur! Inventore, quidem fugiat unde facere velit voluptatibus id.
+    Debitis ab animi fuga quidem sint deserunt exercitationem error harum beatae soluta officia incidunt placeat, quae enim quia perspiciatis cumque unde dolorem dolore numquam itaque corporis vero. Debitis, cumque. Voluptatibus!
+    Corporis modi expedita quia incidunt alias dolores dolorum maiores quam amet, magni facere ipsa laboriosam veritatis, ab nam voluptas est aut culpa veniam consequuntur saepe voluptate! Doloribus ullam aliquid voluptatem.</p>
+</body>
+</html>

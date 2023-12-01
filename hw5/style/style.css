@@ -1,0 +1,66 @@
+
+/* Задание 4*/
+.out {
+    display: flex;
+    /* justify-content: space-around;  Выравнивание карточек вдоль горизонтальной линии по центру */
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.p1 {
+    margin: 100px;
+    padding: 5px 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    margin: 0;
+}
+ 
+
+
+
+
+/* Задание 5*/
+.product-container {
+    display: flex;
+    /* justify-content: space-around;  Выравнивание карточек вдоль горизонтальной линии по центру */
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+  
+.product-price {
+    margin-top: 5px;
+    color: #007bff;
+}
+  
+.product-count {
+    margin-top: 5px;
+    color: #28a745;
+}
+ 
+.active {
+    color: white;
+    background-color: #fcacac;
+}
